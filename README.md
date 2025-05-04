@@ -1,4 +1,4 @@
-# File Content Collector
+# A Comprehensive File Content Collector Assistant for AI Bots
 
 A comprehensive and powerful Bash script that collects and combines file contents from selected directories and file types into a single output file, with an interactive selection interface.
 It's a good choice to gather file content of your project in a row and in a selective manner when you want to talk to AI bots to help you on your codes!
