@@ -17,7 +17,7 @@ It's shell-script nature makes its flexible and useful in any environment and it
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/abdolhosein/file-content-collector.git
+   git clone https://github.com/abdolhosein/ai-assistant-file-content-collector.git
    cd file-content-collector
    ```
 
