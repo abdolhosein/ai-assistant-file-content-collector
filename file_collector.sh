@@ -67,7 +67,7 @@ paginated_menu() {
         clear
         echo -e "${BLUE}$prompt${NC}"
         echo -e "Page $((page + 1))/$total_pages (${#selected_indexes[@]} selected)"
-        echo "----------------------------------------"
+        echo "------------------------------------------------------------"
         
         local start=$((page * ITEMS_PER_PAGE))
         local end=$((start + ITEMS_PER_PAGE - 1))
@@ -93,10 +93,10 @@ paginated_menu() {
             fi
         done
         
-        echo "----------------------------------------"
-        echo "Arrows: Navigate  Space: Toggle  Enter: Confirm"
-        echo "a: Select All  u: Unselect All  q: Quit"
-        echo "----------------------------------------"
+        echo "------------------------------------------------------------"
+        echo -e "Arrows(${GREEN}↑↓${NC}|${GREEN}←→${NC}): Navigate | ${GREEN}Space${NC}: Toggle    |  ${GREEN}Enter${NC}: Confirm"
+        echo -e "${GREEN}a${NC}: Select All           | ${GREEN}u${NC}: Unselect All  |  ${GREEN}q${NC}: Quit"
+        echo "------------------------------------------------------------"
         
         # Read single character input
         IFS= read -rsn1 key
@@ -194,7 +194,7 @@ paginated_menu() {
 #         clear
 #         echo -e "${BLUE}$prompt${NC}"
 #         echo -e "Page $((page + 1))/$total_pages (${#selected[@]} selected)"
-#         echo "----------------------------------------"
+#         echo "------------------------------------------------------------"
         
 #         local start=$((page * ITEMS_PER_PAGE))
 #         local end=$((start + ITEMS_PER_PAGE - 1))
@@ -209,12 +209,12 @@ paginated_menu() {
 #             fi
 #         done
         
-#         echo "----------------------------------------"
+#         echo "------------------------------------------------------------"
 #         echo "n: Next page, p: Previous page"
 #         echo "a: Select all visible, u: Unselect all visible"
 #         echo "t: Toggle all items, c: Confirm selection"
 #         echo "Enter item numbers to toggle (comma separated)"
-#         echo "----------------------------------------"
+#         echo "------------------------------------------------------------"
         
 #         read -p "Your choice: " choice
         
